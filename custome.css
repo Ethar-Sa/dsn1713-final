@@ -1,0 +1,42 @@
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-purple {
+    color: #5e3b9a;
+}
+
+.btn-purple {
+    background-color: #5e3b9a;
+    color: #fff;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-purple:hover {
+    background-color: #4b2f7c;
+    color: #fff;
+}
+
+/* Sidebar */
+.sidebar {
+    min-height: 100vh;
+}
+
+/* Carousel */
+.carousel-inner img {
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Cards */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer a {
+    text-decoration: none;
+}
