@@ -6,33 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Craigslist Homepage</title>
 
-    <!-- Bootstrap CSS -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap Icons -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+
     <link rel="stylesheet" href="custom.css">
 </head>
 
 <body>
 
-    <!-- Navbar -->
+
     <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
         <div class="container">
-            <!-- Logo -->
             <a class="navbar-brand fw-bold text-purple fs-3" href="#">☮️</a>
 
-            <!-- Search Bar -->
             <form class="d-flex mx-auto w-50">
                 <input class="form-control me-2" type="search" placeholder="Search Here !" aria-label="Search">
                 <button class="btn btn-purple" type="submit"><i class="bi bi-search"></i></button>
             </form>
 
-            <!-- Nav Links -->
             <ul class="navbar-nav ms-auto align-items-center">
-                <li class="nav-item"><a class="nav-link fw-semibold" href="#">HOME</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">HOME</a></li>
                 <li class="nav-item"><a class="nav-link fw-semibold" href="#">ABOUT</a></li>
                 <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-person"></i></a></li>
                 <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-pencil-square"></i></a></li>
@@ -42,51 +39,54 @@
 
     <div class="container-fluid">
         <div class="row">
-            <!-- Sidebar -->
+
             <aside class="col-md-3 col-lg-2 bg-light sidebar py-4">
                 <div class="px-3">
+
                     <h6 class="fw-semibold mb-2">Categories:</h6>
-                    <select class="form-select mb-4">
-                        <option>Categories</option>
-                    </select>
+                    <a href="categories.html" class="btn btn-purple w-100 mb-4">
+                        Browse Categories
+                    </a>
 
                     <h6 class="fw-semibold mb-2">Nearby:</h6>
                     <select class="form-select mb-4">
                         <option>Nearby</option>
                     </select>
 
-                    <!-- Calendar -->
                     <div class="calendar mb-4 text-center">
                         <h6 class="fw-semibold mb-3">September 2021</h6>
-                        <img src="image.jpg" class="img-fluid rounded" alt="calendar">
+                        <i class="bi bi-calendar3 display-4 text-purple"></i>
                     </div>
 
-                    <!-- Map -->
+
                     <div class="map text-center">
-                        <img src="image.jpg" class="img-fluid rounded" alt="map">
+                        <i class="bi bi-geo-alt-fill display-4 text-purple"></i>
                     </div>
+
                 </div>
             </aside>
 
-            <!-- Main Content -->
             <main class="col-md-9 col-lg-10 px-4 py-4">
-                <!-- Hero Section -->
+
                 <div class="row align-items-center mb-5">
+
                     <div class="col-md-6">
                         <p class="text-uppercase small text-muted mb-1">Welcome to Craigslist</p>
                         <h2 class="fw-bold text-purple">Post and discover local deals</h2>
                         <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <button class="btn btn-purple mt-2">Post your ad</button>
+                        <button class="btn btn-purple btn-lg px-4 py-2 mt-2">Post your ad</button>
                     </div>
+
                     <div class="col-md-6 text-center">
                         <img src="images/Hero Section.webp" alt="hero illustration" class="img-fluid">
                     </div>
                 </div>
 
-                <!-- FOR YOU -->
+
                 <section class="mb-5">
                     <h3 class="fw-bold text-purple mb-3">FOR YOU</h3>
+
                     <div id="carouselForYou" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -97,10 +97,12 @@
                                 </div>
                             </div>
                         </div>
+
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselForYou"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
                         </button>
+
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselForYou"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon"></span>
@@ -108,9 +110,9 @@
                     </div>
                 </section>
 
-                <!-- WHAT’S NEW -->
                 <section class="mb-5">
                     <h3 class="fw-bold text-purple mb-3">WHAT’S NEW</h3>
+
                     <div id="carouselWhatsNew" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -121,10 +123,12 @@
                                 </div>
                             </div>
                         </div>
+
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselWhatsNew"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
                         </button>
+
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselWhatsNew"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon"></span>
@@ -132,44 +136,54 @@
                     </div>
                 </section>
 
-                <!-- ACTIVE CATEGORIES -->
                 <section class="mb-5">
                     <h3 class="fw-bold text-purple mb-3">ACTIVE CATEGORIES</h3>
+
                     <div class="row g-4">
                         <div class="col-md-4">
-                            <div class="card h-100 shadow-sm border-0">
-                                <img src="images/Active Categories 1.webp" class="card-img-top" alt="poster 1">
-                                <div class="card-body">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                                    <button class="btn btn-purple">See post</button>
+                            <a href="categories.html" class="text-decoration-none text-dark">
+                                <div class="card h-100 shadow-sm border-0">
+                                    <img src="images/Active Categories 1.webp" class="card-img-top" alt="poster 1">
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum dolor sit amet...</p>
+                                        <button class="btn btn-purple">See post</button>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
+
                         <div class="col-md-4">
-                            <div class="card h-100 shadow-sm border-0">
-                                <img src="images/Active Categories 2.webp" class="card-img-top" alt="poster 2">
-                                <div class="card-body">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                                    <button class="btn btn-purple">See post</button>
+                            <a href="categories.html" class="text-decoration-none text-dark">
+                                <div class="card h-100 shadow-sm border-0">
+                                    <img src="images/Active Categories 2.webp" class="card-img-top" alt="poster 2">
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum dolor sit amet...</p>
+                                        <button class="btn btn-purple">See post</button>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
+
                         <div class="col-md-4">
-                            <div class="card h-100 shadow-sm border-0">
-                                <img src="images/Active Categories 3.webp" class="card-img-top" alt="poster 3">
-                                <div class="card-body">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                                    <button class="btn btn-purple">See post</button>
+                            <a href="categories.html" class="text-decoration-none text-dark">
+                                <div class="card h-100 shadow-sm border-0">
+                                    <img src="images/Active Categories 3.webp" class="card-img-top" alt="poster 3">
+                                    <div class="card-body">
+                                        <p class="card-text">Lorem ipsum dolor sit amet...</p>
+                                        <button class="btn btn-purple">See post</button>
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
+
                 </section>
+
             </main>
         </div>
     </div>
 
-    <!-- Footer -->
+
     <footer class="text-center py-3 bg-white mt-5 border-top">
         <div class="d-flex justify-content-center align-items-center gap-3">
             <span class="fs-5 text-purple">☮️</span>
@@ -178,8 +192,9 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

@@ -1,4 +1,5 @@
-/* General */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -19,24 +20,49 @@ body {
     color: #fff;
 }
 
-/* Sidebar */
-.sidebar {
-    min-height: 100vh;
+.btn-purple {
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
 }
 
-/* Carousel */
+.navbar {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.navbar .nav-link {
+    font-size: 1.1rem;
+}
+
+.navbar-brand {
+    font-size: 2rem !important;
+}
+
+.navbar .nav-link i {
+    font-size: 1.4rem;
+    color: #5e3b9a;
+    transition: 0.2s;
+}
+
+.navbar .nav-link i:hover {
+    color: #4b2f7c;
+    transform: scale(1.1);
+}
+
+
 .carousel-inner img {
     border-radius: 10px;
     object-fit: cover;
 }
 
-/* Cards */
+
 .card img {
     height: 200px;
     object-fit: cover;
 }
 
-/* Footer */
+
 footer a {
     text-decoration: none;
 }
